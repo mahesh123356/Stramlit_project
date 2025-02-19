@@ -21,3 +21,4 @@ with open("Jamboree_Admission_model.pkl", "rb") as file:
 if st.button("Predict"):
     out = model.predict([[Gre, Tofel, sop, lor, cgpa, Univeristy_rating, research]])
     st.write("Your chances of getting admission in Jamboree is ", out[0])
+# completed
